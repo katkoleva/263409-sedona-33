@@ -111,10 +111,10 @@
         </fieldset>
         <button class="button" type="submit">Применить</button>
         <!--Что такое "Сбросить"? Я думаю, что это тоже кнопка, просто с другой стилизацией в CSS.-->
-        <button class="button" type="submit">Сбросить</button>
+        <button class="button" type="reset">Сбросить</button>
       </form>
 
-      <p class="hotels-quantity">Найдено гостиниц:<!--Как разметить такой тип даных, который меняется в зависимости от результатов поиска?<>38</>--></p>
+      <p class="hotels-quantity">Найдено гостиниц:<span>38</span></p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
@@ -135,27 +135,22 @@
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
           <p class="hotel-type-price">От 4000 ₽</p>
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
-          <button class="hotel-save-button" type="submit">В избранное</button>
+          <button class="hotel-save-button" type="button">В избранное</button>
 
-          <!--Рейтинг в виде звезд-->
-          <div class="rating-result">
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span></span>
+          <!--звездность отеля-->
+          <div class="hotels-stars"></div>
           </div>
           <p class="rating-result-resume">Рейтинг: 8,5</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -163,19 +158,13 @@
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="submit">В избранное</button>
 
-          <!--Рейтинг в виде звезд-->
-          <div class="rating-result">
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span></span>
-  	        <span></span>
-          </div>
+          <!--звездность отеля-->
+          <div class="hotels-stars"></div>
           <p class="rating-result-resume">Рейтинг: 8,9</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -183,19 +172,13 @@
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="submit">В избранное</button>
 
-          <!--Рейтинг в виде звезд-->
-          <div class="rating-result">
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span></span>
-  	        <span></span>
-  	        <span></span>
-          </div>
+          <!--звездность отеля-->
+          <div class="hotels-stars"></div>
           <p class="rating-result-resume">Рейтинг: 9,2</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -203,14 +186,8 @@
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="submit">В избранное</button>
 
-          <!--Рейтинг в виде звезд-->
-          <div class="rating-result">
-  	        <span class="active"></span>
-  	        <span class="active"></span>
-  	        <span></span>
-  	        <span></span>
-  	        <span></span>
-          </div>
+          <!--звездность отеля-->
+          <div class="hotels-stars"></div>
           <p class="rating-result-resume">Рейтинг: 9,2</p>
         </li>
       </ul>
