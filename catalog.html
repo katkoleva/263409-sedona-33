@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
   <header class="main-header">
     <nav class="navigation">
       <a class="navigatin-logo" href="index.html">
-        <img class="logo-small" src="" alt="Логотип Седоны">
+        <img class="logo-small" src="images/nav-logo.svg" width="139" height="70" alt="Логотип Седоны">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -60,7 +61,7 @@
       <h2 class="visually-hidden">Список отелей с фильтрами</h2>
       <form class="catalog-hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-hotels-filter-group">
-         <legend class="catalog-hotels-filter-title">Инфраструктура</legend>
+         <legend class="catalog-hotels-filter-title">Инфраструктура:</legend>
          <ul class="catalog-hotels-filter-list">
            <li class="catalog-hotels-filter-item">
              <label class="control">
@@ -87,7 +88,7 @@
       </fieldset>
 
       <fieldset class="catalog-hotels-filter-group">
-          <legend class="catalog-hotels-filter-title">Тип жилья</legend>
+          <legend class="catalog-hotels-filter-title">Тип жилья:</legend>
           <ul class="catalog-hotels-filter-list">
             <li class="catalog-hotels-filter-item">
              <label class="control">
@@ -110,36 +111,38 @@
           </ul>
         </fieldset>
         <button class="button" type="submit">Применить</button>
-        <!--Что такое "Сбросить"? Я думаю, что это тоже кнопка, просто с другой стилизацией в CSS.-->
+        <!--Сбросить- кнопка тип reset-->
         <button class="button" type="reset">Сбросить</button>
       </form>
 
       <p class="hotels-quantity">Найдено гостиниц:<span>38</span></p>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</option>
-      </select>
+      <div class="sorting-container">
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
 
-      <!--Эти три ссылки надо делать списком?-->
-      <a href="#" class="button button-active">
-        <span class="visually-hidden">Показать список</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать список с увеличенными карточками</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
+        <!-- три ссылки-->
+        <a href="#" class="button button-active">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать список с увеличенными карточками</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+      </div>
 
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="Amara Resort & Spa">
+            <img class="hotel-card-image" src="images/catalog-hotel-amara.jpg" width="300" height="206" alt="Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
-          <p class="hotel-type-price">От 4000 ₽</p>
+          <p class="hotel-price">От 4000 ₽</p>
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="button">В избранное</button>
 
@@ -150,11 +153,11 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="Desert Quail Inn">
+            <img class="hotel-card-image" src="images/catalog-hotel-desert.jpg" width="300" height="206" alt="Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
-          <p class="hotel-type-price">От 3000 ₽</p>
+          <p class="hotel-price">От 3000 ₽</p>
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="submit">В избранное</button>
 
@@ -164,11 +167,11 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="Villas at Poco Diablo">
+            <img class="hotel-card-image" src="images/catalog-hotel-villas.jpg" width="300" height="206" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
-          <p class="hotel-type-price">От 2000 ₽</p>
+          <p class="hotel-price">От 2000 ₽</p>
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="submit">В избранное</button>
 
@@ -178,11 +181,11 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="" alt="GreenTree Inn">
+            <img class="hotel-card-image" src="images/catalog-hotel-greentree.jpg" width="300" height="206" alt="GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
-          <p class="hotel-type-price">От 2000 ₽</p>
+          <p class="hotel-price">От 2000 ₽</p>
           <a class="hotel-card-link" href="hotel.html">Подробнее</a>
           <button class="hotel-save-button" type="submit">В избранное</button>
 
@@ -191,7 +194,7 @@
           <p class="rating-result-resume">Рейтинг: 9,2</p>
         </li>
       </ul>
-      <button class="button-pagination-load-more" type="button">Загрузить еще</button>
+      <button class="button-pagination-load-more" type="button">Загрузить ещё</button>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -221,10 +224,10 @@
     </section>
 
 
-    <section class="email">
+    <section class="email-catalog">
       <h2 class="visually-hidden">Рассылка</h2>
       <p class="email-promo">Подпишитесь на рассылку</p>
-      <p class="email-promo">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="email-promo-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="text" name="user-email" placeholder="Ваш e-mail">
         <button class="button" type="submit">Подписаться</button>
