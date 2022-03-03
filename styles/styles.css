@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Полужирный PT Sans */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #E5E5E5; /* какой у этого сайта основной фон - белый или серый?
+  в макете цвет #E5E5E5 значится как background и лежит в основе всех страниц, поэтому взяла его */
+}
+
+button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(131, 179, 211, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* header */
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* navigation */
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color:inherit;
+}
+
+/* main-index */
+.main-index {
+  background-image: url("../images/index-top-background-rocks.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+
+.city-promo {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.city-promo-text {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+/* Список преимуществ */
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-background-1,
+.advantages-item-background-5  {
+  background-color: rgba(131, 179, 211, 1);
+}
+
+.advantages-item-background-3  {
+  background-color: rgba(255, 255, 255, 1);
+
+}
+
+.advantages-item-background-7  {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-background-2,
+.advantages-item-background-4,
+.advantages-item-background-6,
+.advantages-item-background-8  {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* поиск отелей*/
+
+.hotels-promo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotels-promo-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hotels-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(117, 98, 87, 1);
+  text-decoration: none;
+}
+
+
+/* рассылка в index */
+.email-index {
+  background-image: url("../images/index-bottom-background-rocks.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.email-promo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.email-promo-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+
+/* форма внутри рассылки */
+.email-form {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* footer */
+
+footer {
+  background-color: #ffffff;
+}
+
+.page-footer a {
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-phone-phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+/* Стили отдельно для каталога */
+
+/* main в страницах каталога */
+.main-inner {
+  background-image: url("../images/catalog-top-background-rocks.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* link */
+.breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-hotels-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/* сортировка */
+.sorting-container {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* карточки товара */
+.hotel-card {
+  background-color: #ffffff;
+}
+/* карточки товара - link */
+.hotel-card-link {
+  text-decoration: none;
+}
+/* карточки товара - заголовок*/
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-transform: none;
+  }
+  /* карточки товара - тип гостиницы, цена */
+.hotel-type,
+.hotel-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+/* карточки товара - ссылка на страницу гостиницы */
+.hotel-card-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756257;
+}
+/* карточки товара - рейтинг */
+.rating-result-resume {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  /* ??? background-color: #F2F2F2; ???*/
+}
+/* карточки товара - кнопки */
+.hotel-save-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* пагинация */
+.button-pagination-load-more {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+.pagination {
+  background-color: #ffffff;
+}
+.pagination-link {
+  color: #ffffff;
+  background-color: #83B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+/* сортировка гостиниц */
+.sorting-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* рассылка в catalog */
+.email-catalog {
+  background-color: #ffffff;
+  color: #000000;
+}
