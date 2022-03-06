@@ -30,6 +30,7 @@ button {
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  border: none;
   color: #ffffff;
   background-color: rgba(131, 179, 211, 1);
   text-decoration: none;
@@ -53,14 +54,34 @@ button {
   color:inherit;
 }
 
+/* navigation-user */
+.navigation-user-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756257;
+}
+
+
+/* big-logo-and-background-img-container */
+.container-index {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("../images/index-top-background-rocks.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
 /* main-index */
 .main-index {
-  background-image: url("../images/index-top-background-rocks.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  color: #000000;
-  text-align: center;
 }
 
 .city-promo {
@@ -76,6 +97,10 @@ button {
 }
 
 /* Список преимуществ */
+
+.advantages {
+  text-align: center;
+}
 
 .advantages-list {
   text-align: center;
@@ -110,6 +135,9 @@ button {
 }
 
 /* поиск отелей*/
+.hotels-index {
+  text-align: center;
+}
 
 .hotels-promo {
   font-weight: 700;
@@ -141,6 +169,7 @@ button {
   background-size: 100% auto;
   background-color: #ffffff;
   color: #ffffff;
+  text-align: center;
 }
 
 .email-promo {
@@ -193,14 +222,24 @@ footer {
 
 /* Стили отдельно для каталога */
 
-/* main в страницах каталога */
-.main-inner {
+/* img-background-container в страницах каталога */
+.container-catalog {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-image: url("../images/catalog-top-background-rocks.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #ffffff;
   color: #000000;
   text-align: center;
+}
+
+
+
+/* main в страницах каталога */
+.main-inner {
+
 }
 
 .inner-header-title {
@@ -328,4 +367,5 @@ footer {
 .email-catalog {
   background-color: #ffffff;
   color: #000000;
+  text-align: center;
 }
