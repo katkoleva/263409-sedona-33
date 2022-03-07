@@ -15,13 +15,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #E5E5E5; /* какой у этого сайта основной фон - белый или серый?
-  в макете цвет #E5E5E5 значится как background и лежит в основе всех страниц, поэтому взяла его */
+  background-color: #E5E5E5;
 }
 
 button {
@@ -37,6 +44,14 @@ button {
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+/* main-index */
+.main-index {
+}
+
 /* header */
 .main-header {
   background-color: #ffffff;
@@ -44,6 +59,11 @@ button {
 }
 
 /* navigation */
+
+.navigation {
+
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -80,11 +100,8 @@ button {
     text-align: center;
 }
 
-/* main-index */
-.main-index {
-}
-
 .city-promo {
+  text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -276,6 +293,16 @@ footer {
 .sorting-container {
   color: #000000;
   background-color: #ffffff;
+}
+
+/* секция с карточками товара и пагинацией */
+.hotel-catalog {
+  text-align: center;
+}
+
+/* список карточек товара */
+.hotel-list {
+  text-align: center;
 }
 
 /* карточки товара */
