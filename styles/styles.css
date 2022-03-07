@@ -31,6 +31,10 @@ body {
   background-color: #E5E5E5;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 button {
   font-family: inherit;
   font-size: 20px;
@@ -61,7 +65,20 @@ button {
 /* navigation */
 
 .navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
 
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 345px;
+}
+
+.navigation-user {
+  max-width: 264px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -296,8 +313,8 @@ footer {
 }
 
 /* секция с карточками товара и пагинацией */
-.hotel-catalog {
-  text-align: center;
+.container-hotels-catalog-items {
+
 }
 
 /* список карточек товара */
@@ -308,6 +325,7 @@ footer {
 /* карточки товара */
 .hotel-card {
   background-color: #ffffff;
+  text-align: center;
 }
 /* карточки товара - link */
 .hotel-card-link {
@@ -356,6 +374,10 @@ footer {
 }
 
 /* пагинация */
+.container-hotels-catalog-pagination {
+  text-align: center;
+}
+
 .button-pagination-load-more {
   font-weight: 700;
   font-size: 20px;
@@ -364,9 +386,12 @@ footer {
   color: #ffffff;
   background-color: #83B3D3;
 }
-.pagination {
+
+.pagination-item {
   background-color: #ffffff;
+  list-style: none;
 }
+
 .pagination-link {
   color: #ffffff;
   background-color: #83B3D3;
@@ -376,6 +401,7 @@ footer {
   font-weight: 700;
   text-align: center;
 }
+
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
