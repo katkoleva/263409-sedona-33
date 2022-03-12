@@ -48,10 +48,6 @@ button {
   text-transform: uppercase;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 /* main-index */
 .main-index {
 }
@@ -103,9 +99,15 @@ button {
   background-color: #756257;
 }
 
+/* page-container */
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 
 /* big-logo-and-background-img-container */
-.container-index {
+.big-logo-container {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -115,6 +117,12 @@ button {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
+}
+
+/* logo */
+.logo-large {
+  display: block;
+  margin: 0 auto;
 }
 
 .city-promo {
@@ -137,8 +145,24 @@ button {
 }
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   text-align: center;
+  list-style: none;
 }
+
+.advantages-item {
+  width: 400px;
+
+}
+
+.advantages-item-pic {
+  width: 800px;
+}
+
 
 .advantages-title {
   font-weight: 700;
@@ -171,6 +195,7 @@ button {
 /* поиск отелей*/
 .hotels-index {
   text-align: center;
+  width: 100%;
 }
 
 .hotels-promo {
@@ -204,6 +229,7 @@ button {
   background-color: #ffffff;
   color: #ffffff;
   text-align: center;
+  width: 100%;
 }
 
 .email-promo {
@@ -236,6 +262,28 @@ footer {
   background-color: #ffffff;
 }
 
+.page-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-social {
+  width: 107px;
+  margin-left: 72px;
+  margin-right: 60px;
+}
+
+.footer-phone {
+  width: 720px;
+  text-align: center;
+}
+
+.footer-about {
+  width: 115px;
+  margin-right: 72px;
+}
+
 .page-footer a {
   text-align: center;
   text-decoration: none;
@@ -254,6 +302,8 @@ footer {
 
 
 
+
+
 /* Стили отдельно для каталога */
 
 /* img-background-container в страницах каталога */
@@ -269,12 +319,27 @@ footer {
   text-align: center;
 }
 
-
-
-/* main в страницах каталога */
-.main-inner {
+.catalog-hotels-filter {
+  display: flex;
 
 }
+
+.catalog-hotels-filter-group {
+  width: 150px;
+  margin-left: 71px;
+}
+
+
+
+/* сетка для самого каталога */
+.hotel-list {
+
+}
+
+.hotel-card {
+
+}
+
 
 .inner-header-title {
   font-weight: 700;
