@@ -581,6 +581,7 @@ footer {
   background-color: #ffffff;
   display: flex;
   border: solid grey 2px;
+  margin-bottom: 53px;
 }
 
 .sorting-container .button {
@@ -594,26 +595,40 @@ footer {
 
 /* секция с карточками товара и пагинацией */
 .container-hotels-catalog-items {
-
+ padding-left: 72px;
+ padding-right: 72px;
 }
 
 /* список карточек товара */
 .hotel-list {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 10px 18px;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
+  border: solid red 1px;
 }
 
 /* карточки товара */
 .hotel-card {
   background-color: #ffffff;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: solid orange 1px;
 }
+
+.hotel-card:nth-child(3n) {
+;
+}
+
+
 /* карточки товара - link */
 .hotel-card-link {
   text-decoration: none;
 }
+
 /* карточки товара - заголовок*/
 .hotel-card-title {
   font-weight: 700;
@@ -622,12 +637,23 @@ footer {
   color: #000000;
   text-transform: none;
   }
+
+/* карточки товара - текстовое содержимое */
+  .hotel-card-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 140px 160px;
+    grid-template-rows: 37px 37px 37px;
+    border: solid green 1px;
+  }
+
   /* карточки товара - тип гостиницы, цена */
 .hotel-type,
 .hotel-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 16px;
 }
 /* карточки товара - ссылка на страницу гостиницы */
 .hotel-card-link {
