@@ -91,11 +91,13 @@ button {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .navigation-user {
   max-width: 264px;
   margin-left: auto;
+
 }
 
 .navigation-link {
@@ -407,14 +409,13 @@ footer {
 }
 /* социальные сети*/
 .footer-social {
-  max-width: 108px;
-  margin-left: 72px;
-  margin-right: 60px;
+  
   border: solid blue 2px;
 }
 
 .footer-social-list {
   border: solid red 2px;
+  /*max-width: 108px;*/
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -514,17 +515,6 @@ footer {
 }
 
 
-
-/* сетка для самого каталога */
-.hotel-list {
- list-style-type: none;
-}
-
-.hotel-card {
-
-}
-
-
 /* breadcrumbs */
 .breadcrumbs {
   font-weight: 400;
@@ -580,6 +570,7 @@ footer {
   color: #000000;
   background-color: #ffffff;
   display: flex;
+  justify-content: end;
   border: solid grey 2px;
   margin-bottom: 53px;
 }
@@ -643,7 +634,7 @@ footer {
     padding: 20px;
     display: grid;
     grid-template-columns: 140px 160px;
-    grid-template-rows: 37px 37px 37px;
+    grid-template-rows: 1fr 1fr 1fr;
     border: solid green 1px;
   }
 
