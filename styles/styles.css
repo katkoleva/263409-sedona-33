@@ -25,10 +25,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .main-container {
@@ -97,7 +97,7 @@ button {
 
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -163,7 +163,7 @@ button {
     background-image: url("../images/index-top-background-rocks.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-color: #e5e5e5;
     color: #000000;
     text-align: center;
     padding-top: 51px;
@@ -193,6 +193,7 @@ button {
 
 .advantages {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .advantages-list {
@@ -216,23 +217,23 @@ button {
 /* цвета списка преимуществ */
 .advantages-item-background-1,
 .advantages-item-background-5  {
-  background-color: rgba(131, 179, 211, 1);
+  background-color: #83b3d3;
 }
 
 .advantages-item-background-3  {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 
 }
 
 .advantages-item-background-7  {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #83b3d333;
 }
 
 .advantages-item-background-2,
 .advantages-item-background-4,
 .advantages-item-background-6,
 .advantages-item-background-8  {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #83b3d31F;
 }
 
 /* отступы внутри пунктов списка преимуществ */
@@ -270,6 +271,7 @@ button {
   line-height: 28px;
   text-transform: uppercase;
   border: solid red 2px;
+
 }
 
 .advantages-item-background-1 .advantages-title,
@@ -337,7 +339,7 @@ button {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(117, 98, 87, 1);
+  background-color: #756257;
   text-decoration: none;
 }
 
@@ -345,6 +347,7 @@ button {
 .hotels-index {
   text-align: center;
   padding: 91px 240px;
+  background-color: #ffffff;
 }
 
 .hotels-index p{
@@ -363,6 +366,7 @@ button {
   margin-top: 0;
   margin-bottom: 56px;
 }
+
 .hotels-search {
   margin: 0px;
 }
@@ -372,7 +376,7 @@ button {
   background-image: url("../images/index-bottom-background-rocks.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   color: #ffffff;
   text-align: center;
   max-width: 100%;
@@ -436,7 +440,6 @@ footer {
 
 .footer-social-list {
   border: solid red 2px;
-  /*max-width: 108px;*/
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -508,10 +511,6 @@ footer {
 
 
 
-
-
-
-
 /* Стили отдельно для каталога */
 
 /* img-background-container в страницах каталога */
@@ -526,7 +525,7 @@ footer {
   background-image: url("../images/catalog-top-background-rocks.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   color: #000000;
   text-align: center;
 }
@@ -604,6 +603,7 @@ footer {
   justify-content: space-between;
   padding: 44px 71px;
   border: solid blue 2px;
+  background-color: #ffffff;
 }
 
 .hotels-quantity {
@@ -632,12 +632,13 @@ footer {
 .container-hotels-catalog-items {
  padding-left: 72px;
  padding-right: 72px;
+ background-color: #ffffff;
 }
 
 /* список карточек товара */
 .hotel-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: auto auto auto;
   gap: 10px 18px;
   list-style-type: none;
   margin: 0;
@@ -654,9 +655,6 @@ footer {
   border: solid orange 1px;
 }
 
-.hotel-card:nth-child(3n) {
-;
-}
 
 
 /* карточки товара - link */
@@ -706,8 +704,7 @@ footer {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  /* ??? background-color: #F2F2F2; ???*/
-}
+  }
 /* карточки товара - кнопки */
 .hotel-save-button {
   font-weight: 700;
@@ -716,17 +713,18 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 /* пагинация */
 .container-hotels-catalog-pagination {
   text-align: center;
   display: flex;
   border: solid black 3px;
   padding: 30px 72px;
+  background-color: #ffffff;
 }
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -738,7 +736,7 @@ footer {
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   margin: auto;
 }
 
@@ -752,14 +750,14 @@ footer {
 
 .pagination-link {
   color: #ffffff;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   text-decoration: none;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  width: 55px;
-  height: 55px;
+  width: auto;
+  height: auto;
   display: block;
   box-sizing: border-box;
   padding: 17px;
@@ -767,7 +765,7 @@ footer {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 /* сортировка гостиниц */
